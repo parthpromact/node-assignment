@@ -34,9 +34,9 @@ export const fetchLogs = async (req, res) => {
       });
    
       // if Meesage is not found
-      if (logs.length === 0) {
-        return httpResponse(res, 404, "Logs not Found");
-      }
+      // if (logs.length === 0) {
+      //   return httpResponse(res, 404, "Logs not Found");
+      // }
   
       return httpResponse(res, 200, "Logs fetched Successfully", logs);
     } catch (error) { 
